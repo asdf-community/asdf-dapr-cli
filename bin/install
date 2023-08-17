@@ -18,8 +18,7 @@ install_dapr() {
   local tgz_path="${bin_install_path}/dapr.tgz"
   local bin_path="${bin_install_path}/dapr"
   echo "[*] Downloading dapr-cli from ${download_url}"
-  if curl -L -sf "$download_url" -o "$bin_path"; then
-    sleep 999
+  if curl -L -sf "$download_url" -o "$tgz_path"; then
     tar -xf $tgz_path
     chmod +x $bin_path
     echo "[*] dapr-cli has been installed. Use 'dapr' to get started"
