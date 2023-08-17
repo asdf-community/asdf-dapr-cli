@@ -13,7 +13,17 @@ asdf plugin-add dapr-cli https://github.com/mindovermiles262/asdf-dapr-cli.git
 Check out the [asdf documentation](https://asdf-vm.com/#/core-manage-versions?id=install-version) for instructions on how to install and manage versions of dapr-cli
 
 ```
- 
+% asdf install dapr-cli 1.11.0
+[*] Downloading dapr-cli from https://github.com/dapr/cli/releases/download/v1.11.0/dapr_darwin_amd64.tar.gz
+[*] dapr-cli has been installed. Use 'dapr' to get started
+
+% asdf global dapr-cli 1.11.0
+
+% which dapr
+$HOME/.asdf/shims/dapr
+
+% dapr -v
+CLI version: 1.11.0
 ```
 
 ## Architecture Override
